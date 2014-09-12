@@ -84,11 +84,7 @@ var lgm_at = {
 		},
 
         push : function(arr,a_flag) {
-           	if(a_flag){
-           		for(i=0;i<arr.length;i++){
-			    	c(arr[i]);
-			  	}
-			}
+        	c(arr);
         },
 
         track : function(arr,a_flag) {

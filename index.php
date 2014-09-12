@@ -29,11 +29,10 @@
 <script type="text/javascript">
 	for (var i = 0; i < 25; i++) {
 
-		var obj = {"firstName":"John", "lastName":"Doe", "age":46};
-
+		var obj = [{'category':'items','code':i}];
 		var anchor = document.createElement("a");
 		anchor.setAttribute('href','#');
-		anchor.setAttribute('onClick','lgm_at.push('+obj+')');
+		anchor.setAttribute('onClick','lgm_at.push('+obj[0].code+')');
 
 		var oImg=document.createElement("img");
 		oImg.setAttribute('src', 'sample-graphic.gif');
@@ -44,8 +43,6 @@
 		document.body.appendChild(anchor);
 	}
 </script>
-<a href="#" onClick="lgm_at.push(x);">push</a>
-<a href="#" onClick="lgm_at.track(x);">track</a>
 
 </body>
 </html>
