@@ -20,10 +20,30 @@
 	<script type="text/javascript">
 	
 	</script>
+	
+	<LINK rel="stylesheet" href="style.css" type="text/css" />
 	<title></title>
 </head>
 <body>
 
+<script type="text/javascript">
+	for (var i = 0; i < 25; i++) {
+
+		var obj = {"firstName":"John", "lastName":"Doe", "age":46};
+
+		var anchor = document.createElement("a");
+		anchor.setAttribute('href','#');
+		anchor.setAttribute('onClick','lgm_at.push('+obj+')');
+
+		var oImg=document.createElement("img");
+		oImg.setAttribute('src', 'sample-graphic.gif');
+		oImg.setAttribute('id','sample_img');
+		oImg.setAttribute('alt', 'na');
+		anchor.appendChild(oImg);
+
+		document.body.appendChild(anchor);
+	}
+</script>
 <a href="#" onClick="lgm_at.push(x);">push</a>
 <a href="#" onClick="lgm_at.track(x);">track</a>
 

@@ -1,0 +1,9 @@
+body{
+	margin: 0 auto;
+}
+
+#sample_img{
+	border: 2px solid #DCDCDC;
+	width: 250px;
+	height: 200px;
+}
